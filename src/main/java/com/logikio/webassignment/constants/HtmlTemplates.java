@@ -2,7 +2,7 @@ package com.logikio.webassignment.constants;
 
 public class HtmlTemplates
 {
-    final public static String NOT_FOUND_HTML_TEMPLATE = "<!DOCTYPE html>\n"
+    public static final String NOT_FOUND_HTML_TEMPLATE = "<!DOCTYPE html>\n"
                     + "<html lang=\"en\">\n" + "<head>\n" + "<meta charset=\"UTF-8\">\n"
                     + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
                     + "<title>Resource Not Found</title>\n" + "<style>\n" + "  body {\n"
@@ -25,7 +25,7 @@ public class HtmlTemplates
                     + "  <p>The requested resource could not be found.</p>\n" + "</div>\n"
                     + "</body>\n" + "</html>";
 
-    final public static String EXCEPTION_HTML_TEMPLATE = "<!DOCTYPE html>" +
+    public static final String EXCEPTION_HTML_TEMPLATE = "<!DOCTYPE html>" +
                     "<html lang=\"en\">" +
                     "<head>" +
                     "<meta charset=\"UTF-8\">" +
@@ -47,7 +47,7 @@ public class HtmlTemplates
                     "</body>" +
                     "</html>";
 
-    final public static String SUCCESS_HTML_TEMPLATE = "<!DOCTYPE html>\n" + "<html lang=\"en\">\n"
+    public static final String SUCCESS_HTML_TEMPLATE = "<!DOCTYPE html>\n" + "<html lang=\"en\">\n"
                     + "<head>\n" + "<meta charset=\"UTF-8\">\n"
                     + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
                     + "<title>Success Message</title>\n" + "<style>\n" + "  body {\n"
@@ -69,7 +69,7 @@ public class HtmlTemplates
                     + "    <strong>Success!</strong> Your action is completed successfully and the result is: %s\n"
                     + "  </div>\n" + "</body>\n" + "</html>\n";
 
-    final public static String BAD_REQUEST_HTML_TEMPLATE = "<!DOCTYPE html>\n"
+    public static final String BAD_REQUEST_HTML_TEMPLATE = "<!DOCTYPE html>\n"
                     + "<html lang=\"en\">\n" + "<head>\n" + "    <meta charset=\"UTF-8\">\n"
                     + "    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
                     + "    <title>Bad Request with Animation</title>\n" + "    <style>\n"
@@ -94,4 +94,27 @@ public class HtmlTemplates
                     + "        <h1>Bad Request</h1>\n"
                     + "        <p>%s.</p>\n"
                     + "    </div>\n" + "</body>\n" + "</html>\n";
+
+    public static final String PORT_REDIRECT_HTML_TEMPLATE = "<!DOCTYPE html>\n"
+                    + "<html lang=\"en\">\n" + "<head>\n" + "<meta charset=\"UTF-8\">\n"
+                    + "<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n"
+                    + "<title>Port Notification</title>\n" + "<style>\n" + "  body {\n"
+                    + "    font-family: Arial, sans-serif;\n"
+                    + "    background: linear-gradient(to right, #4ca1af, #c4e0e5); /* Background animation */\n"
+                    + "    animation: gradientAnim 10s ease infinite alternate;\n"
+                    + "    display: flex;\n" + "    justify-content: center;\n"
+                    + "    align-items: center;\n" + "    height: 100vh;\n" + "    margin: 0;\n"
+                    + "  }\n" + "\n" + "  @keyframes gradientAnim {\n" + "    0% {\n"
+                    + "      background-position: 0% 50%;\n" + "    }\n" + "    100% {\n"
+                    + "      background-position: 100% 50%;\n" + "    }\n" + "  }\n" + "\n"
+                    + "  .message {\n" + "    background-color: #fff;\n" + "    padding: 20px;\n"
+                    + "    border-radius: 10px;\n"
+                    + "    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n"
+                    + "    text-align: center;\n" + "    animation: fadeIn 1s ease;\n" + "  }\n"
+                    + "\n" + "  @keyframes fadeIn {\n" + "    0% {\n" + "      opacity: 0;\n"
+                    + "    }\n" + "    100% {\n" + "      opacity: 1;\n" + "    }\n" + "  }\n"
+                    + "</style>\n" + "</head>\n" + "<body>\n" + "  <div class=\"message\">\n"
+                    + "    <h2>Port 8080 is not used for this service.</h2>\n"
+                    + "    <p>Please use port 8085.</p>\n" + "  </div>\n" + "</body>\n"
+                    + "</html>\n";
 }

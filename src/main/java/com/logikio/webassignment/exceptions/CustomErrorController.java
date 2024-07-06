@@ -7,13 +7,8 @@ import org.springframework.boot.web.servlet.error.ErrorController;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.ControllerAdvice;
-import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.context.request.WebRequest;
-import static com.logikio.webassignment.constants.HtmlTemplates.BAD_REQUEST_HTML_TEMPLATE;
 import static com.logikio.webassignment.constants.HtmlTemplates.EXCEPTION_HTML_TEMPLATE;
 import static com.logikio.webassignment.constants.HtmlTemplates.NOT_FOUND_HTML_TEMPLATE;
 
